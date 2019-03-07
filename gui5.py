@@ -13,10 +13,11 @@ class Application(Frame):
         self.inst_lbl = Label(self, text = "Enter password for the secret of life")
         self.inst_lbl.grid(row = 0, column = 0, columnspan = 2, sticky = W)
         #create label for password
+
+        self.pw_ent = Entry(self)
         self.pw_lbl = Label (self, text = "Password: ")
         self.pw_lbl.grid(row = 0, column = 0, sticky = W)
 
-        self.pw_ent = Entry(self)
         self.pw_ent.grid(row = 1, column = 1, sticky = W)
 
         self.submit_bttn = Button(self, text = "Submit", command = self.reveal)
